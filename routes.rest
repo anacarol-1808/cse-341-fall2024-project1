@@ -1,15 +1,16 @@
 //LOCAL HOST
+
 ### Get all contacts
 Send Request
-GET http://localhost:8080/contacts
+GET http://localhost:3000/users
 
 ### Get contacts by id
 Send Request
-GET http://localhost:8080/contacts/6272893f2fb9ced117e0c4fd
+GET http://localhost:3000/users/673051fffb8be78149e8fc67
 
 ### Create contact
 Send Request
-POST http://localhost:8080/contacts HTTP/1.1
+POST http://localhost:3000/users HTTP/1.1
 content-type: application/json
 
 {
@@ -21,4 +22,32 @@ content-type: application/json
 
 ### Delete contact
 Send Request
-DELETE http://localhost:8080/contacts/6272893f2fb9ced117e0c4fd HTTP/1.1
+DELETE http://localhost:3000/users/673051fffb8be78149e8fc67 HTTP/1.1
+
+
+
+//PRODUCTION
+
+### Get all contacts
+Send Request
+GET https://cse-341-fall2024-project1.onrender.com/users
+
+### Get contacts by id
+Send Request
+GET https://cse-341-fall2024-project1.onrender.com/users/673051fffb8be78149e8fc67
+
+### Create contact
+Send Request
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Nathan",
+    "lastName": "Smith",
+    "email": "nathan.smith@bol.edu",
+    "favoriteColor": "green"
+}
+
+### Delete contact
+Send Request
+DELETE http://localhost:3000/users/673051fffb8be78149e8fc67 HTTP/1.1
