@@ -1,0 +1,26 @@
+[
+    {
+      "firstName": "Nathan",
+      "lastName": "Smith",
+      "email": "nathan.smith@bol.edu",
+      "favoriteColor": "green"
+    },
+    {
+      "firstName": "Jessica",
+      "lastName": "Brown",
+      "email": "jessica.brown@bol.edu",
+      "favoriteColor": "blue"
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Taylor",
+      "email": "michael.taylor@bol.edu",
+      "favoriteColor": "red"
+    },
+    {
+      "firstName": "Emily",
+      "lastName": "Johnson",
+      "email": "emily.johnson@bol.edu",
+      "favoriteColor": "purple"
+    }
+  ]
