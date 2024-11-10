@@ -3,24 +3,28 @@
       "firstName": "Nathan",
       "lastName": "Smith",
       "email": "nathan.smith@bol.edu",
-      "favoriteColor": "green"
+      "favoriteColor": "green",
+      "birthday": "01/10/1989"
     },
     {
       "firstName": "Jessica",
       "lastName": "Brown",
       "email": "jessica.brown@bol.edu",
-      "favoriteColor": "blue"
+      "favoriteColor": "blue",
+      "birthday": "04/10/2008"
     },
     {
       "firstName": "Michael",
       "lastName": "Taylor",
       "email": "michael.taylor@bol.edu",
-      "favoriteColor": "red"
+      "favoriteColor": "red",
+      "birthday": "09/10/2000"
     },
     {
       "firstName": "Emily",
       "lastName": "Johnson",
       "email": "emily.johnson@bol.edu",
-      "favoriteColor": "purple"
+      "favoriteColor": "purple",
+      "birthday": "10/10/1993"
     }
   ]
