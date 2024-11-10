@@ -1,0 +1,24 @@
+//LOCAL HOST
+### Get all contacts
+Send Request
+GET http://localhost:8080/contacts
+
+### Get contacts by id
+Send Request
+GET http://localhost:8080/contacts/6272893f2fb9ced117e0c4fd
+
+### Create contact
+Send Request
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Nathan",
+    "lastName": "Smith",
+    "email": "nathan.smith@bol.edu",
+    "favoriteColor": "green"
+}
+
+### Delete contact
+Send Request
+DELETE http://localhost:8080/contacts/6272893f2fb9ced117e0c4fd HTTP/1.1
