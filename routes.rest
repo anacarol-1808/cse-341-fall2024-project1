@@ -2,15 +2,15 @@
 
 ### Get all contacts
 Send Request
-GET http://localhost:3000/users
+GET http://localhost:3000/contacts
 
 ### Get contacts by id
 Send Request
-GET http://localhost:3000/users/673051fffb8be78149e8fc67
+GET http://localhost:3000/contacts/673051fffb8be78149e8fc67
 
 ### Create contact
 Send Request
-POST http://localhost:3000/users HTTP/1.1
+POST http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
 
 {
@@ -22,7 +22,7 @@ content-type: application/json
 
 ### Delete contact
 Send Request
-DELETE http://localhost:3000/users/673051fffb8be78149e8fc67 HTTP/1.1
+DELETE http://localhost:3000/contacts/673051fffb8be78149e8fc67 HTTP/1.1
 
 
 
@@ -30,15 +30,15 @@ DELETE http://localhost:3000/users/673051fffb8be78149e8fc67 HTTP/1.1
 
 ### Get all contacts
 Send Request
-GET https://cse-341-fall2024-project1.onrender.com/users
+GET https://cse-341-fall2024-project1.onrender.com/contacts
 
 ### Get contacts by id
 Send Request
-GET https://cse-341-fall2024-project1.onrender.com/users/673051fffb8be78149e8fc67
+GET https://cse-341-fall2024-project1.onrender.com/contacts/673051fffb8be78149e8fc67
 
 ### Create contact
 Send Request
-POST http://localhost:3000/users HTTP/1.1
+POST http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
 
 {
@@ -46,9 +46,9 @@ content-type: application/json
     "lastName": "Smith",
     "email": "nathan.smith@bol.edu",
     "favoriteColor": "green",
-    ""birthday": "01/10/1989"
+    "birthday": "01/10/1989"
 }
 
 ### Delete contact
 Send Request
-DELETE http://localhost:3000/users/673051fffb8be78149e8fc67 HTTP/1.1
+DELETE http://localhost:3000/contacts/673051fffb8be78149e8fc67 HTTP/1.1
