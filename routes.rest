@@ -17,7 +17,8 @@ content-type: application/json
     "firstName": "Nathan",
     "lastName": "Smith",
     "email": "nathan.smith@bol.edu",
-    "favoriteColor": "green"
+    "favoriteColor": "green",
+    "birthday": "01/10/1989"
 }
 
 ### Delete contact
