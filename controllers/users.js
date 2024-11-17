@@ -27,7 +27,7 @@ const createUser = async(req, res) => {
         favoriteColor: req.body.favoriteColor,
         birthday: req.body.birthday
     };
-    const response = await mongodb.getDatabase().db().collection('contacts').insertOne(user);
+    const response = await mongodb.getDb().db().collection('contacts').insertOne(user);
     if (response.acknowledged > 0) {
         res.status(204).send();
     } else {
@@ -44,7 +44,7 @@ const updateUser = async(req, res) => {
         favoriteColor: req.body.favoriteColor,
         birthday: req.body.birthday
     };
-    const response = await mongodb.getDatabase().db().collection('contacts').replaceOne({_id: userId}, user);
+    const response = await mongodb.getDb().db().collection('contacts').replaceOne({_id: userId}, user);
     if (response.modifiedCount > 0) {
         res.status(204).send();
     } else {
@@ -54,7 +54,7 @@ const updateUser = async(req, res) => {
 
 const deleteUser = async(req, res) => {
     const userId = new ObjectId(req.params.id);
-    const response = await mongodb.getDatabase().db().collection('contacts').deleteOne({_id: userId}, true);
+    const response = await mongodb.getDb().db().collection('contacts').deleteOne({_id: userId}, true);
     if (response.deletedCount > 0) {
         res.status(204).send();
     } else {
