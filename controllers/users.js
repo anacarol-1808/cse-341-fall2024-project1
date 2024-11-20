@@ -2,22 +2,32 @@ const mongodb = require('../data/database');
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
-    //#swagger.tags=['Users']
-    const result = await mongodb.getDb().db().collection('contacts').find();
-    result.toArray().then((contacts) => {
-        res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(contacts);
-    });
+
+    try {
+        //#swagger.tags=['Users']
+        const result = await mongodb.getDb().db().collection('contacts').find();
+        result.toArray().then((contacts) => {
+            res.setHeader('Content-Type', 'application/json');
+            res.status(200).json(contacts);
+        });
+    } catch (error) {
+        res.status(500).json(error || "Some error occurred while fetching the users.");
+    }
 };
+    
 
 const getSingle = async (req, res) => {
-    //#swagger.tags=['Users']
-    const userId = new ObjectId(req.params.id);
-    const result = await mongodb.getDb().db().collection('contacts').find({_id: userId });
-    result.toArray().then((contacts) => {
-        res.setHeader('Content-Type', 'application/json');
-        res.status(200).json(contacts[0]);
-    });
+    try {
+        //#swagger.tags=['Users']
+        const userId = new ObjectId(req.params.id);
+        const result = await mongodb.getDb().db().collection('contacts').find({_id: userId });
+        result.toArray().then((contacts) => {
+            res.setHeader('Content-Type', 'application/json');
+            res.status(200).json(contacts[0]);
+        });
+    } catch (error) {
+        res.status(500).json(error || "Some error occurred while fetching the user.")
+    }
     
 };
 
