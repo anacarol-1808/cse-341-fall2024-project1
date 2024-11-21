@@ -2,7 +2,7 @@ const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
     info: {
-      title: 'CSE341 Project 1 - Contacts API',
+      title: 'CSE341 Project 1 - Users API',
       description: 'This projects is required as part of the BYUI class CSE341: Web Services.'
     },
     host: 'localhost:3000',

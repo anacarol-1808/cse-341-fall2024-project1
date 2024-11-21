@@ -2,7 +2,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "CSE341 Project 1 - Contacts API",
+    "title": "CSE341 Project 1 - Users API",
     "description": "This projects is required as part of the BYUI class CSE341: Web Services.",
     "version": "1.0.0"
   },
@@ -25,7 +25,7 @@
         }
       }
     },
-    "/contacts/": {
+    "/users/": {
       "get": {
         "tags": [
           "Users"
@@ -81,7 +81,7 @@
         }
       }
     },
-    "/contacts/{id}": {
+    "/users/{id}": {
       "get": {
         "tags": [
           "Users"

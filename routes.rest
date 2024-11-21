@@ -1,13 +1,13 @@
 //LOCAL HOST
 
-### GET all contacts
-GET http://localhost:3000/contacts 
+### GET all users
+GET http://localhost:3000/users 
 
-### GET contacts by id
-GET http://localhost:3000/contacts/673051fffb8be78149e8fc67
+### GET users by id
+GET http://localhost:3000/users/673051fffb8be78149e8fc67
 
 ### Create contact
-POST http://localhost:3000/contacts HTTP/1.1
+POST http://localhost:3000/users HTTP/1.1
 content-type: application/json
 
 {
@@ -19,7 +19,7 @@ content-type: application/json
 }
 
 ### PUT contact
-PUT http://localhost:3000/contacts/67397c1658509d4fe79d6a51 HTTP/1.1
+PUT http://localhost:3000/users/67397c1658509d4fe79d6a51 HTTP/1.1
 content-type: application/json
 
 {
@@ -31,20 +31,20 @@ content-type: application/json
 }
 
 ### DELETE contact
-DELETE http://localhost:3000/contacts/673051fffb8be78149e8fc6a HTTP/1.1
+DELETE http://localhost:3000/users/673051fffb8be78149e8fc6a HTTP/1.1
 
 
 
 //PRODUCTION
 
-### GET all contacts
-GET https://cse-341-fall2024-project1.onrender.com/contacts
+### GET all users
+GET https://cse-341-fall2024-project1.onrender.com/users
 
-### GET contacts by id
-GET https://cse-341-fall2024-project1.onrender.com/contacts/673051fffb8be78149e8fc67
+### GET users by id
+GET https://cse-341-fall2024-project1.onrender.com/users/673051fffb8be78149e8fc67
 
 ### Create contact
-POST https://cse-341-fall2024-project1.onrender.com/contacts HTTP/1.1
+POST https://cse-341-fall2024-project1.onrender.com/users HTTP/1.1
 content-type: application/json
 
 {
@@ -56,7 +56,7 @@ content-type: application/json
 }
 
 ### PUT contact
-PUT https://cse-341-fall2024-project1.onrender.com/contacts/673051fffb8be78149e8fc67 HTTP/1.1
+PUT https://cse-341-fall2024-project1.onrender.com/users/673051fffb8be78149e8fc67 HTTP/1.1
 content-type: application/json
 
 {
@@ -68,4 +68,4 @@ content-type: application/json
 }
 
 ### DELETE contact
-DELETE https://cse-341-fall2024-project1.onrender.com/contacts/673051fffb8be78149e8fc67 HTTP/1.1
+DELETE https://cse-341-fall2024-project1.onrender.com/users/673051fffb8be78149e8fc67 HTTP/1.1
